@@ -1,6 +1,8 @@
 <Solution>
   <Folder Name="/files/" />
-  <Folder Name="/Solution Items/" />
+  <Folder Name="/Solution Items/">
+    <File Path="task.md" />
+  </Folder>
   <Project Path="AwesomeFiles.Api/AwesomeFiles.Api.csproj" />
   <Project Path="AwesomeFiles.Client/AwesomeFiles.Client.csproj" />
 </Solution>

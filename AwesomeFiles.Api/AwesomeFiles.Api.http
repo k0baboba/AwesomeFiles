@@ -1,6 +1,22 @@
 @AwesomeFiles.Api_HostAddress = http://localhost:5272
 
-GET {{AwesomeFiles.Api_HostAddress}}/weatherforecast/
+GET {{AwesomeFiles.Api_HostAddress}}/api/files
 Accept: application/json
 
 ###
+
+POST {{AwesomeFiles.Api_HostAddress}}/api/archives
+Content-Type: application/json
+
+{
+  "fileNames": ["file1.txt", "file2.txt"]
+}
+
+###
+
+GET {{AwesomeFiles.Api_HostAddress}}/api/archives/1/status
+Accept: application/json
+
+###
+
+GET {{AwesomeFiles.Api_HostAddress}}/api/archives/1/download
